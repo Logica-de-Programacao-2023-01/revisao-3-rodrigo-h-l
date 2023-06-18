@@ -7,13 +7,10 @@ package q4
 
 func SingleNumber(nums []int) int {
 	numero := 0
-	for i:=0;i<len(nums)-1;i++{
-		for p:=i+1;p<len(nums);p++{
-			if nums[i] == nums[p]{
-				break
-			}
-		}
-		numero = i
+
+	for _, c := range nums {
+		numero ^= c
 	}
+	
 	return numero
 }

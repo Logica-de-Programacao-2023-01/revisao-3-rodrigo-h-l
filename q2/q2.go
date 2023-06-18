@@ -29,4 +29,5 @@ func LongestCommonPrefix(strs []string) string {
 	}
 }
 	return true
+}
 

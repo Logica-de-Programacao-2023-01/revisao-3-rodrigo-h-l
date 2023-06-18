@@ -5,7 +5,7 @@ package q2
 //Se não houver um prefixo comum, retorne uma string vazia "".
 
 func LongestCommonPrefix(strs []string) string {
-	if len(strs) == 0 {
+		if len(strs) == 0 {
 		return ""
 	}
 
@@ -21,21 +21,4 @@ func LongestCommonPrefix(strs []string) string {
 	}
 
 	return prefix
-}
-
-func startsWith(str, prefix string) bool {
-	if len(str) < len(prefix) {
-		return false
-	}
-
-	for i := 0; i < len(prefix); i++ {
-		if str[i] != prefix[i] {
-			return false
-		}
-	}
-
-	return true
-}
-
-	return ""
 }

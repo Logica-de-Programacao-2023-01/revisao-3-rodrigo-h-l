@@ -15,10 +15,8 @@ func IsPalindrome(s string) bool {
 	s = strings.ToLower(s)
 
 	for i := 0; i < len(s)/2; i++ {
-		for p := len(s); p > len(s)/2; p-- {
-			if s[p] != s[i] {
-				return false
-			}
+		if s[i] != s[len(s)-1-i] {
+			return false
 		}
 	}
 	return true

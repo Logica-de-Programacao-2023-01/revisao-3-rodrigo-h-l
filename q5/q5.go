@@ -14,8 +14,8 @@ func IsPalindrome(s string) bool {
 	s = strings.ReplaceAll(s, " ", "")
 	s = strings.ToLower(s)
 
-	for i := 0; i <= len(s)/2; i++ {
-		for p := len(s); p >= len(s)/2; p-- {
+	for i := 0; i < len(s)/2; i++ {
+		for p := len(s); p > len(s)/2; p-- {
 			if s[p] != s[i] {
 				return false
 			}

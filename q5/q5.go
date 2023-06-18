@@ -16,7 +16,7 @@ func IsPalindrome(s string) bool {
 
 	for i := 0; i < len(s); i++ {
 		for p := len(s); p > 0; p-- {
-			if p != i {
+			if s[p] != s[i] {
 				return false
 			}
 		}

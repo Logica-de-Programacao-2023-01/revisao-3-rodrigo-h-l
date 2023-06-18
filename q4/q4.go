@@ -6,5 +6,11 @@ package q4
 //Você deve implementar uma solução com complexidade de tempo linear e sem memória extra.
 
 func SingleNumber(nums []int) int {
-	return 0
+	numero := 0
+
+	for _, c := range nums {
+		numero ^= c
+	}
+	
+	return numero
 }

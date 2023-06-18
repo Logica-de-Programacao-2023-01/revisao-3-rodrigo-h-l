@@ -21,4 +21,12 @@ func LongestCommonPrefix(strs []string) string {
 	}
 
 	return prefix
+	func startsWith(str, prefix string) bool {
+	for i := 0; i < len(prefix); i++ {
+		if i >= len(str) || str[i] != prefix[i] {
+			return false
+		}
+	}
+}
+	return true
 }
